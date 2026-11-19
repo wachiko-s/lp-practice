@@ -5,6 +5,12 @@
   margin: 0 auto;
 }
 
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .header-back{
   background-color: #fff;
   padding: 10px 0;
@@ -78,6 +84,7 @@ h2{
 
 .pc-cover{
   flex: 4;
+  text-align: center;
 }
 
 .text-gp{
@@ -120,9 +127,10 @@ h2{
   width: 300px;
   height: 300px;
   opacity: 0.7;
+  transition: opacity 0.7s;
 }
 
-.skills-flex{
+.skills-list{
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -130,20 +138,20 @@ h2{
   flex-wrap: wrap;
 }
 
-.skills-flex a{
+.skills-list a{
   display: inline-block;
   margin: 50px 50px;
 }
 
-.skills-flex a:nth-child(1),.skills-flex a:nth-child(4){
+.skills-list a:nth-child(1),.skills-list a:nth-child(4){
   margin-left: 0;
 }
 
-.skills-flex a:nth-child(3),.skills-flex a:nth-child(6){
+.skills-list a:nth-child(3),.skills-list a:nth-child(6){
   margin-right: 0;
 }
 
-.skills-flex a:nth-child(n+4){
+.skills-list a:nth-child(n+4){
   margin-bottom: 0;
 }
 
@@ -187,22 +195,22 @@ table th:first-child,table td:first-child {
   border-left: none;
 }
 
-.SNS-back{
+.sns-back{
   background-color: #e3f2fd;
   padding: 200px 0;
 }
 
-.SNS{
+.sns{
   width: 185px;
   color: #8c8c8c;
   font-size: 40px;
   overflow: hidden;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   transition: background-color 0.5s;
 }
 
-.SNS:hover{
+.sns:hover{
   background-color: #fff;
 }
 
