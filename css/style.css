@@ -92,7 +92,7 @@ h2{
   flex: 6;
 }
 
-.h2-work{
+.work-title{
   letter-spacing: 10px;
   margin-top: 20px;
   margin-bottom: 35px;
@@ -112,7 +112,7 @@ h2{
 
 
 
-.h2-section{
+.section-title{
   letter-spacing: 10px;
   text-align: center;
 }
@@ -132,24 +132,20 @@ h2{
 
 .skills-list{
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
-li{
+.list-item{
   display: inline-block;
-  margin: 50px 50px 0px 50px;
+  margin-top: 50px;
+  margin-right: 100px;
 }
 
-li:nth-child(1),li:nth-child(4){
-  margin-left: 0;
-}
-
-li:nth-child(3),li:nth-child(6){
+.list-item:nth-child(3n){
   margin-right: 0;
 }
 
-li:nth-child(n+4){
+.list-item:nth-child(n+4){
   margin-top: 100px;
 }
 
